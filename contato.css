@@ -1,0 +1,160 @@
+header {
+    background: url("cab.jpg");
+    padding: 10px 0;
+}
+
+h1 img {
+    transition: 1s filter; 
+}
+
+h1 img:hover{
+    filter: drop-shadow(5px 5px 5px darkgray);
+}
+
+.box {
+    width: 940px;
+    position: relative;
+    margin: 0px auto;
+}
+
+nav {
+    position: absolute;
+    top: 120px;
+    right: 10%;
+}
+
+
+nav li {
+    display: inline-block;
+    margin: 0 0 0 25px;
+    font-size: 23px;
+}
+
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-family: 'Lucida Sans', sans-serif;
+    text-decoration: none;
+    transition: 0.8s color;
+}
+
+nav a:hover {
+    color:goldenrod;
+}
+
+nav a:active{
+    font-size: 24px;
+    color: blue;    
+}
+
+main {
+    width: 940px;
+    margin: 0px auto;
+    padding: 20px 10px;
+}
+
+form {
+    margin: 40px 0;
+    font-size: 20px;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 20px 0;
+    font-family: sans-serif;
+}
+
+
+.input-padrao, form textarea {
+   display: block;
+   padding: 10px 15px;
+   margin: 20px 0;
+   font-style: sans-serif;
+   font-size: 85%;
+   width: 45%;
+}
+
+.selecione {
+    font-size: 18px;
+}
+
+
+select {
+    width: 30%;
+}
+
+#horario {
+    margin: 40px 0;
+
+}
+.checkbox {
+    margin: 20px 0px;
+    margin-right: 10px;
+    font-size: 18px;
+
+}
+
+#enviar {
+    filter: drop-shadow(2px 2px 2px black);
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    background: darkgray;
+    transition: 1s background;
+    cursor: pointer;
+}
+
+#enviar:hover {
+    background:gray;
+    transform: scale(1.01)
+}
+
+#enviar:active{
+    filter: none;
+    cursor:progress;
+    transform: scale(0.95);
+    transition: 0.2s
+}
+
+footer {
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 30px 0;
+}
+
+.copyright {
+    color:ghostwhite;
+    font-family: 'Lucida Sans Unicode' sans-serif;
+    margin: 20px;
+    font-size: 13px;
+}
+
+table {
+    width: 500px;
+    height: 25px;
+    margin: 50px 0 30px 0;
+    border: 5px solid black;
+    text-align: center;
+    background: gainsboro;
+}
+
+thead {
+    background: darkgray;
+    font-weight: bold;
+}
+
+
+td, th { 
+    border: 2px solid black;
+    width: 250px;
+    padding: 10px 0px;   
+}
+
+tfoot {
+    position: relative;
+    text-align: center;
+    left: 125px;
+    text-align: right;
+}

@@ -10,6 +10,13 @@ header {
     margin: 0px auto;
 }
 
+h1 img {
+    transition: 1s filter;
+}
+h1 img:hover {
+    filter: drop-shadow(5px 5px 5px darkgrey);
+}
+
 nav {
     position: absolute;
     top: 120px;
@@ -17,8 +24,8 @@ nav {
 }
 
 nav li {
-    display: inline;
-    font-size: 25px;
+    display: inline-block;
+    font-size: 23px;
     margin: 0 0 0 25px;
 }
 
@@ -61,6 +68,7 @@ main ul {
 
 .produtos:hover {
     border: 6px dotted goldenrod;
+    transition: 0.2s border;
 }
 
 .produtos:hover h2 {
