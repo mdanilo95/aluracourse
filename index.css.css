@@ -1,6 +1,130 @@
-h1 {
+header {
+    background: url("cab.jpg");
+    padding: 10px 0;
+}
+
+h1 img {
+    transition: 1s filter; 
+}
+
+h1 img:hover{
+    filter: drop-shadow(5px 5px 5px darkgray);
+}
+
+.box {
+    width: 940px;
+    position: relative;
+    margin: 0px auto;
+}
+
+nav {
+    position: absolute;
+    top: 120px;
+    right: 10%;
+}
+
+
+nav li {
+    display: inline-block;
+    margin: 0 0 0 25px;
+    font-size: 23px;
+}
+
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-family: 'Lucida Sans', sans-serif;
+    text-decoration: none;
+    transition: 0.8s color;
+}
+
+nav a:hover {
+    color:goldenrod;
+}
+
+nav a:active{
+    font-size: 24px;
+    color: blue;    
+}
+
+main {
+    background: whitesmoke;
+    padding: 50px 0;
+}
+
+
+#boxbenef {
+    width: 940px;
+    margin: 0px auto;
+    padding: 50px 0 0 0;
+    text-align: justify;
+}
+
+
+.title {
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0 0 20px;   
     text-align: center;
 }
-.missão {
-    font-size: 40px
+
+.text {
+    padding: 25px;
+    font-size: 20px;
+    font-family: sans-serif;    
+}
+
+
+#missao {
+    border: 4px dotted goldenrod;
+    display: inline-block;
+    padding: 20px 10%;
+    margin: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#boxbenef ul {
+    margin: 20px;
+    width: 25%;
+    font-weight: bold;
+    font-family: sans-serif;  
+    display: inline-block;
+    padding: 0 1%;
+    border: 5px dotted goldenrod;
+}
+
+#lista-benef {
+    width: 940px;
+    font-size: 20px;  
+    position: absolute;
+}
+
+.beneficios {
+    padding: 10px 0;
+}
+
+.fotobenef {
+    width: 47%;    
+    position: relative;
+    left: 50%;
+    bottom: 20px;
+    padding: 0 0 0 10px;
+} 
+
+footer {
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 30px 0;
+}
+
+.copyright {
+    color:ghostwhite;
+    font-family: 'Lucida Sans Unicode' sans-serif;
+    margin: 20px;
+    font-size: 13px;
 }
