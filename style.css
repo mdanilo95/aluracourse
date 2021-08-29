@@ -1,66 +1,277 @@
-h1 {
-    background: whitesmoke;
-    padding-left: 15px;
+header {
+    background: url('bg.jpg');
+    padding: 10px 0;
 }
 
-#banner {
-    width: 100%;
-    height: 400px;
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: bold;
+    text-align: justify;
 }
 
-.divPrincipal {
-    background: gainsboro;
-    padding: 10px;
+.box {
+    width: 940px;
+    position: relative;
+    margin: 0px auto;
 }
 
-h2 {
-    background-color: gainsboro;
+h1 img {
+    transition: 0.5s filter;
+}
+
+h1 img:hover {
+    filter: drop-shadow(2px 2px 2px black);
+}
+
+nav {
+    position: absolute;
+    top: 120px;
+    right: 10%;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 23px;
+    margin: 0 0 0 25px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.8s color;
+}
+
+nav a:hover {
+    color: goldenrod;
+}
+
+nav a:active{
+    font-size: 24px;
+    color: blue;    
+}
+
+main ul {
+    width: 940px;
+    margin: 0 auto;
     text-align: center;
-    font-size: 30px;
+    padding: 60px 0;
 }
 
-p {
-    text-align: center;
+
+.produtos {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 4px dotted black;
+    border-radius: 10px;
+}
+
+.produtos:hover {
+    border: 5px dotted goldenrod;
+    transition: 0.2s border;
+}
+
+.produtos:hover h2 {
+    font-size: 25px;
+}
+
+.produtos:hover .produtos-descriçao {
+    color: goldenrod;
+}
+
+.produtos:active {
+    border: 4px dotted goldenrod;
+}
+
+.produtos h2 {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.produtos-descriçao {
+    font-weight: bold;
     font-size: 20px;
+}
+
+.produtos-preço {
+    font-style: inherit;
+    font-size: 22px;
+    padding-top: 20px;
+}
+
+footer {
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 30px 0;
+}
+
+.copyright {
+    color:ghostwhite;
+    font-family: 'Lucida Sans Unicode' sans-serif;
+    margin: 20px;
+    font-size: 13px;
+}
+
+/* PAGINA INICIAL  ###########################################################################*/
+.index-main {
+    background: linear-gradient(whitesmoke, #888888);
+}
+
+.boxbenef {
+    width: 940px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.title {
+    font-size: 2em; 
+    text-align: center;
 }
 
 .text {
-    margin-right: 50%;
-    text-align: justify;
-    padding-top: 10px;
-    padding-left: 10px;
+    text-indent: 2em;
+    margin: 2em;
+    font-size: 1.2em;
+    line-height: 1.8em;
 }
 
-#missão {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 22px;
-    font-weight: bold;
-}
 
-.divBenef {
-    background: whitesmoke;
-    text-align: left;
-    padding: 10px;
-} 
-
-h3 {
-    font-size: 25px;
+.missao {
+    padding: 1.5em 10%;
+    border: 2px groove black;
+    margin: 2em;
     text-align: center;
-}
-
-ul {
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    padding-right: 15%;
-}
-
-.benefícios {
-    font-size: 20px;
-    font-style: italic;
+    font-size: 1.3em;
 }
 
 .fotobenef {
-    width: 50%;
-    padding-inline-start: 55px;
+    float: right;
+    width: 40%;
+}
+
+.beneficios {
+    padding: 0 0 2em 3em;
+}
+
+.benef-div {
+    display: inline-block;
+    width: 940px;
+    margin: 0 11em;
+}
+
+.itensbeneficios  {
+    width: 60%; 
+    line-height: 2em;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.sec-mapa {
+    padding: 3em;
+}
+.mapa {
+    text-align: center;
+    margin: 0 10em;
+}
+
+.mapa p {
+    padding: 2em;
+    font-size: 1.2em;
+}
+
+
+/* CONTATO #########################################################################*/
+
+
+form {
+    margin: 40px 0;
+    font-size: 20px;
+}
+
+form label, form legend {
+    display: block;
+    font-weight: lighter;
+    margin: 20px 0;
+}
+
+
+.input-padrao, form textarea {
+   display: block;
+   padding: 10px 15px;
+   margin: 20px 0;
+   width: 45%;
+}
+
+.selecione {
+    font-size: 18px;
+}
+
+select {
+    padding: 0.6em;
+    width: 40%;
+}
+
+#horario {
+    margin: 40px 0;
+
+}
+.checkbox {
+    margin: 20px 0px;
+    margin-right: 10px;
+    font-size: 18px;
+
+}
+
+#enviar {
+    filter: drop-shadow(2px 2px 2px black);
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    background: darkgray;
+    transition: 1s background;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+#enviar:hover {
+    background:gray;
+    transform: scale(1.01)
+}
+
+#enviar:active {
+    filter: none;
+    cursor:progress;
+    transform: scale(0.95);
+    transition: 0.2s
+}
+
+.tablebody {
+    width: 940px;
+    margin: 0px auto;
+}
+
+
+table {
+    width: 500px;
+    height: 25px;
+    margin: 3em 0;
+    border: 3px groove black;
+    text-align: center;
+    background: gainsboro;
+}
+
+thead {
+    background: darkgray;
+}
+
+
+td, th { 
+    border: 2px solid black;
+    width: 250px;
+    padding: 10px 0px;   
 }
